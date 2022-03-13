@@ -1,0 +1,12 @@
+TDrawingPresistance
+{ "BackgroundColor" : 0, "Name" : "mwpmrk" }
+TBus
+{ "BaseVA" : "100000000", "BaseVolt" : "500000", "BusType" : "slackbus", "BusVoltageI" : "0", "BusVoltageR" : "500000", "ConectionsStr" : "2", "ID" : 0, "InjectedP" : "0", "InjectedQ" : "0", "MaxRegulationQ" : "0", "MinRegulationQ" : "0", "Name" : "", "Visable" : false, "XPos" : 50, "YPos" : 50 }
+TBus
+{ "BaseVA" : "100000000", "BaseVolt" : "500000", "BusType" : "loadbus", "BusVoltageI" : "0", "BusVoltageR" : "500000", "ConectionsStr" : "2", "ID" : 1, "InjectedP" : "-500000000", "InjectedQ" : "-300000000", "MaxRegulationQ" : "0", "MinRegulationQ" : "0", "Name" : "", "Visable" : false, "XPos" : 450, "YPos" : 50 }
+TLine
+{ "BaseVA" : "100000000", "BaseVolt" : "500000", "C" : "243300.37925842", "CB1Close" : true, "CB2Close" : true, "ConectionsStr" : "0,1", "ID" : 2, "Length" : "346", "Name" : "", "R" : "0.028", "RC1" : "", "RC1Close" : false, "RC2" : "", "RC2Close" : false, "Visable" : false, "XPos" : 100, "YPos" : 100, "x" : "0.276" }
+TConection
+{ "BaseVA" : "1", "BaseVolt" : "1", "ConectionsStr" : "", "ID" : 3, "ID1" : 0, "ID2" : 2, "Name" : "", "Visable" : false, "X1" : 50, "X2" : 100, "XPos" : 0, "Y1" : 50, "Y2" : 105, "YPos" : 0 }
+TConection
+{ "BaseVA" : "1", "BaseVolt" : "1", "ConectionsStr" : "", "ID" : 4, "ID1" : 2, "ID2" : 1, "Name" : "", "Visable" : false, "X1" : 280, "X2" : 450, "XPos" : 0, "Y1" : 105, "Y2" : 50, "YPos" : 0 }

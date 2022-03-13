@@ -1,0 +1,21 @@
+syntax: glob
+backup/*
+*.o
+*.ppu
+*.exe
+*.res
+*.bat
+*.lps
+lib/*
+mat/*
+log/*
+*.xml
+NeemaServer.compiled
+NeemaServer.or
+History.ini
+Neema.dbg
+enr/link.res
+sudangriddata/*
+neema
+ucomplex.pas
+unittests/neematest

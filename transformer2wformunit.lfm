@@ -1,0 +1,288 @@
+object TransFormer2wForm: TTransFormer2wForm
+  Left = 218
+  Height = 474
+  Top = 179
+  Width = 910
+  Caption = 'TransFormer2wForm'
+  ClientHeight = 474
+  ClientWidth = 910
+  LCLVersion = '2.2.0.4'
+  object PageControl1: TPageControl
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 0
+    Height = 474
+    Top = 0
+    Width = 910
+    ActivePage = TabSheet1
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    TabIndex = 0
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      AnchorSideLeft.Control = PageControl1
+      AnchorSideTop.Control = PageControl1
+      AnchorSideRight.Control = PageControl1
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = PageControl1
+      AnchorSideBottom.Side = asrBottom
+      Caption = 'TabSheet1'
+      ClientHeight = 439
+      ClientWidth = 904
+      object Label12: TLabel
+        Left = 424
+        Height = 17
+        Top = 273
+        Width = 56
+        Caption = 'tap step'
+      end
+      object TAPStep_Edit1: TEdit
+        Left = 416
+        Height = 26
+        Top = 296
+        Width = 80
+        TabOrder = 0
+      end
+      object Label11: TLabel
+        Left = 200
+        Height = 17
+        Top = 355
+        Width = 37
+        Caption = 'name'
+      end
+      object NameEdit: TEdit
+        Left = 259
+        Height = 26
+        Top = 352
+        Width = 80
+        TabOrder = 1
+      end
+      object Label10: TLabel
+        Left = 242
+        Height = 17
+        Top = 198
+        Width = 18
+        Caption = 'V2'
+      end
+      object Label9: TLabel
+        Left = 234
+        Height = 17
+        Top = 125
+        Width = 18
+        Caption = 'V1'
+      end
+      object V2Edit: TEdit
+        Left = 224
+        Height = 26
+        Top = 215
+        Width = 80
+        TabOrder = 2
+      end
+      object V1Edit: TEdit
+        Left = 210
+        Height = 26
+        Top = 145
+        Width = 80
+        TabOrder = 3
+      end
+      object SaveButton: TButton
+        Left = 328
+        Height = 39
+        Top = 384
+        Width = 99
+        Caption = 'save'
+        OnClick = SaveButtonClick
+        TabOrder = 4
+      end
+      object CB2_CheckBox: TCheckBox
+        Left = 39
+        Height = 22
+        Top = 402
+        Width = 50
+        Caption = 'CB2'
+        Enabled = False
+        TabOrder = 5
+      end
+      object CB1_CheckBox: TCheckBox
+        Left = 39
+        Height = 22
+        Top = 359
+        Width = 50
+        Caption = 'CB1'
+        TabOrder = 6
+      end
+      object MaxTap_Edit: TEdit
+        Left = 320
+        Height = 26
+        Top = 296
+        Width = 80
+        TabOrder = 7
+      end
+      object NormalTap_Edit: TEdit
+        Left = 232
+        Height = 26
+        Top = 296
+        Width = 80
+        TabOrder = 8
+      end
+      object MinTap_Edit: TEdit
+        Left = 144
+        Height = 26
+        Top = 296
+        Width = 80
+        TabOrder = 9
+      end
+      object Label8: TLabel
+        Left = 336
+        Height = 17
+        Top = 273
+        Width = 55
+        Caption = 'max tap'
+      end
+      object Label7: TLabel
+        Left = 240
+        Height = 17
+        Top = 273
+        Width = 74
+        Caption = 'normal tap'
+      end
+      object Label6: TLabel
+        Left = 168
+        Height = 17
+        Top = 273
+        Width = 51
+        Caption = 'min tap'
+      end
+      object TAP_Edit: TEdit
+        Left = 35
+        Height = 26
+        Top = 296
+        Width = 80
+        TabOrder = 10
+      end
+      object Label5: TLabel
+        Left = 48
+        Height = 17
+        Top = 273
+        Width = 23
+        Caption = 'tap'
+      end
+      object X_Edit: TEdit
+        Left = 31
+        Height = 26
+        Top = 216
+        Width = 80
+        TabOrder = 11
+      end
+      object Label4: TLabel
+        Left = 38
+        Height = 17
+        Top = 193
+        Width = 9
+        Caption = 'X'
+      end
+      object R_Edit: TEdit
+        Left = 24
+        Height = 26
+        Top = 144
+        Width = 80
+        TabOrder = 12
+      end
+      object Label3: TLabel
+        Left = 31
+        Height = 17
+        Top = 122
+        Width = 9
+        Caption = 'R'
+      end
+      object BASEMVA_Edit: TEdit
+        Left = 104
+        Height = 26
+        Top = 53
+        Width = 80
+        TabOrder = 13
+      end
+      object Label2: TLabel
+        Left = 24
+        Height = 17
+        Top = 53
+        Width = 67
+        Caption = 'base MVA'
+      end
+      object BaseVoltEdit: TEdit
+        Left = 99
+        Height = 26
+        Top = 19
+        Width = 80
+        TabOrder = 14
+      end
+      object Label1: TLabel
+        Left = 21
+        Height = 17
+        Top = 19
+        Width = 61
+        Caption = 'base volt'
+      end
+    end
+    object SETabSheet: TTabSheet
+      Caption = 'SETabSheet'
+      ClientHeight = 439
+      ClientWidth = 904
+      object MeasureStringGrid: TStringGrid
+        AnchorSideLeft.Control = SETabSheet
+        AnchorSideTop.Control = SETabSheet
+        AnchorSideRight.Control = SETabSheet
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = SETabSheet
+        AnchorSideBottom.Side = asrBottom
+        Left = 0
+        Height = 439
+        Top = 0
+        Width = 600
+        Anchors = [akTop, akLeft, akBottom]
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+        TabOrder = 0
+        ColWidths = (
+          44
+          167
+          139
+          62
+          123
+        )
+        Cells = (
+          5
+          0
+          0
+          'type'
+          1
+          0
+          'value1'
+          2
+          0
+          'value2'
+          3
+          0
+          'weight'
+          4
+          0
+          'value'
+        )
+      end
+      object SESaveButton: TButton
+        AnchorSideLeft.Control = MeasureStringGrid
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = MeasureStringGrid
+        Left = 600
+        Height = 42
+        Top = 0
+        Width = 112
+        Caption = 'save'
+        OnClick = SESaveButtonClick
+        TabOrder = 1
+      end
+    end
+  end
+end

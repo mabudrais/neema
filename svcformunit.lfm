@@ -1,0 +1,222 @@
+object SVCForm: TSVCForm
+  Left = 285
+  Height = 509
+  Top = 202
+  Width = 697
+  Caption = 'SVCForm'
+  ClientHeight = 509
+  ClientWidth = 697
+  OnCreate = FormCreate
+  LCLVersion = '2.0.8.0'
+  object BaseVoltEdit: TEdit
+    Left = 99
+    Height = 23
+    Top = 19
+    Width = 80
+    TabOrder = 0
+  end
+  object BASEMVA_Edit: TEdit
+    Left = 99
+    Height = 23
+    Top = 48
+    Width = 80
+    TabOrder = 1
+  end
+  object R_Edit: TEdit
+    Left = 21
+    Height = 23
+    Top = 136
+    Width = 80
+    TabOrder = 2
+  end
+  object X_Edit: TEdit
+    Left = 21
+    Height = 23
+    Top = 216
+    Width = 80
+    TabOrder = 3
+  end
+  object TAP_Edit: TEdit
+    Left = 72
+    Height = 23
+    Top = 304
+    Width = 80
+    TabOrder = 4
+  end
+  object MinTap_Edit: TEdit
+    Left = 176
+    Height = 23
+    Top = 304
+    Width = 80
+    TabOrder = 5
+  end
+  object NormalTap_Edit: TEdit
+    Left = 288
+    Height = 23
+    Top = 304
+    Width = 80
+    TabOrder = 6
+  end
+  object MaxTap_Edit: TEdit
+    Left = 424
+    Height = 23
+    Top = 304
+    Width = 80
+    TabOrder = 7
+  end
+  object CB1_CheckBox: TCheckBox
+    Left = 39
+    Height = 19
+    Top = 359
+    Width = 41
+    Caption = 'CB1'
+    TabOrder = 8
+  end
+  object CB2_CheckBox: TCheckBox
+    Left = 39
+    Height = 19
+    Top = 402
+    Width = 41
+    Caption = 'CB2'
+    Enabled = False
+    TabOrder = 9
+  end
+  object SaveButton: TButton
+    Left = 312
+    Height = 39
+    Top = 456
+    Width = 99
+    Caption = 'save'
+    OnClick = SaveButtonClick
+    TabOrder = 10
+  end
+  object Label1: TLabel
+    Left = 21
+    Height = 15
+    Top = 19
+    Width = 47
+    Caption = 'base volt'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 24
+    Height = 15
+    Top = 53
+    Width = 42
+    Caption = 'base VA'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 48
+    Height = 15
+    Top = 112
+    Width = 7
+    Caption = 'R'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 52
+    Height = 15
+    Top = 189
+    Width = 7
+    Anchors = []
+    Caption = 'X'
+    ParentColor = False
+  end
+  object MaxVAREdit: TEdit
+    Left = 456
+    Height = 23
+    Top = 151
+    Width = 80
+    TabOrder = 11
+    Text = 'MaxVAREdit'
+  end
+  object MinVarEdit: TEdit
+    Left = 456
+    Height = 23
+    Top = 208
+    Width = 80
+    TabOrder = 12
+    Text = 'MinVarEdit'
+  end
+  object TapStepEdit: TEdit
+    Left = 573
+    Height = 23
+    Top = 309
+    Width = 80
+    TabOrder = 13
+    Text = 'TapStepEdit'
+  end
+  object V1Edit: TEdit
+    Left = 289
+    Height = 23
+    Top = 156
+    Width = 80
+    TabOrder = 14
+    Text = 'V1Edit'
+  end
+  object V2Edit: TEdit
+    Left = 290
+    Height = 23
+    Top = 208
+    Width = 80
+    TabOrder = 15
+    Text = 'V2Edit'
+  end
+  object Label5: TLabel
+    Left = 304
+    Height = 15
+    Top = 137
+    Width = 13
+    Caption = 'V1'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 307
+    Height = 15
+    Top = 193
+    Width = 13
+    Caption = 'V2'
+    ParentColor = False
+  end
+  object Label7: TLabel
+    Left = 480
+    Height = 15
+    Top = 127
+    Width = 41
+    Caption = 'Max var'
+    ParentColor = False
+  end
+  object Label8: TLabel
+    Left = 475
+    Height = 15
+    Top = 190
+    Width = 41
+    Caption = 'Min Var'
+    ParentColor = False
+  end
+  object WithTransformerCheckBox: TCheckBox
+    Left = 301
+    Height = 19
+    Top = 33
+    Width = 113
+    Caption = 'With Transformer'
+    OnChange = WithTransformerCheckBoxChange
+    TabOrder = 16
+  end
+  object NameEdit: TEdit
+    Left = 320
+    Height = 23
+    Top = 396
+    Width = 80
+    TabOrder = 17
+  end
+  object Label9: TLabel
+    Left = 272
+    Height = 15
+    Top = 400
+    Width = 32
+    Caption = 'Name'
+    ParentColor = False
+  end
+end

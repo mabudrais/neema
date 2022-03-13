@@ -1,0 +1,20 @@
+object SplashForm: TSplashForm
+  Left = 491
+  Height = 253
+  Top = 168
+  Width = 365
+  BorderStyle = bsNone
+  Caption = 'SplashForm'
+  ClientHeight = 253
+  ClientWidth = 365
+  Position = poScreenCenter
+  LCLVersion = '2.0.8.0'
+  object Label1: TLabel
+    Left = 84
+    Height = 15
+    Top = 93
+    Width = 34
+    Caption = 'Label1'
+    ParentColor = False
+  end
+end

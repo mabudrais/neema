@@ -1,0 +1,122 @@
+object ResultForm: TResultForm
+  Left = 152
+  Height = 610
+  Top = 103
+  Width = 986
+  Caption = 'ResultForm'
+  ClientHeight = 610
+  ClientWidth = 986
+  LCLVersion = '2.2.0.4'
+  object StringGrid1: TStringGrid
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Panel1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 0
+    Height = 568
+    Top = 42
+    Width = 986
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Top = 2
+    ColCount = 4
+    RowCount = 1
+    TabOrder = 0
+    ColWidths = (
+      116
+      73
+      43
+      147
+    )
+    Cells = (
+      2
+      0
+      0
+      'item'
+      2
+      0
+      'value'
+    )
+  end
+  object Panel1: TPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Side = asrBottom
+    Left = 0
+    Height = 40
+    Top = 0
+    Width = 986
+    Anchors = [akTop, akLeft, akRight]
+    ClientHeight = 40
+    ClientWidth = 986
+    TabOrder = 1
+    object PCheckBox: TCheckBox
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = Panel1
+      Left = 1
+      Height = 22
+      Top = 1
+      Width = 33
+      Caption = 'P'
+      OnChange = PCheckBoxChange
+      TabOrder = 0
+    end
+    object QCheckBox: TCheckBox
+      AnchorSideLeft.Control = PCheckBox
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = PCheckBox
+      Left = 39
+      Height = 22
+      Top = 1
+      Width = 35
+      BorderSpacing.Left = 5
+      Caption = 'Q'
+      OnChange = PCheckBoxChange
+      TabOrder = 1
+    end
+    object VCheckBox: TCheckBox
+      AnchorSideLeft.Control = QCheckBox
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Panel1
+      Left = 79
+      Height = 22
+      Top = 1
+      Width = 34
+      BorderSpacing.Left = 5
+      Caption = 'V'
+      OnChange = PCheckBoxChange
+      OnChangeBounds = PCheckBoxChange
+      TabOrder = 2
+    end
+    object SearchEdit: TEdit
+      AnchorSideTop.Control = Panel1
+      AnchorSideRight.Control = Panel1
+      AnchorSideRight.Side = asrBottom
+      Left = 806
+      Height = 26
+      Top = 1
+      Width = 179
+      Anchors = [akTop, akRight]
+      OnChange = SearchEditChange
+      TabOrder = 3
+      TextHint = 'search'
+    end
+    object SaveButton: TButton
+      Left = 229
+      Height = 25
+      Top = 9
+      Width = 75
+      Caption = 'Save'
+      OnClick = SaveButtonClick
+      TabOrder = 4
+    end
+  end
+  object SaveDialog1: TSaveDialog
+    Left = 430
+    Top = 224
+  end
+end

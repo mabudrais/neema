@@ -1,0 +1,159 @@
+\documentclass[]{article}
+\usepackage{amsmath}
+\usepackage{graphicx,float}
+\usepackage{hyperref}
+\usepackage{circuitikz}
+%opening
+\title{3 winding transformer modeling}
+\author{Mohamed Elemam Abudrais}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\section{Introduction}
+\paragraph{}This document discus three winding transformer modeling for load flow analysis, it include the theory and some examples.
+\section{Transformer model}
+\paragraph{}3 winding can be modeled as in the flowing figure:
+\begin{figure}[H]
+	\begin{center}
+		\begin{circuitikz}
+			\draw (2,2)
+			to[generic=$Z1$](4,2)
+			to[generic=$Zm$](4,0)node[ground]{};
+			\draw (7,3)
+			to[generic=$Z2$](5,2)to[short](4,2);
+			\draw (7,1)
+			to[generic=$Z3$](5,2);
+			\draw (1,2) node[above]{$primary$} to[short](2,2);
+			\draw (8,3) node[above]{$secondary$} to[short](7,3);
+			\draw (8,1) node[above]{$tertiary$} to[short](7,1);
+		\end{circuitikz}
+		\caption{3 winding transformer model}
+		\label{fig:TlineModle}
+	\end{center}
+\end{figure}
+\paragraph{} Two test are required for the models which we are using in this article: \textbf{short circuit test} for \textbf{$Z1,Z2,Z3$}, and \textbf{open circuit test} for $Zm$. $Zm$ we can  ignore and still have a good model,so only short circuit test is discussed in this article.
+\section{Short circuit  test}
+\subsection{Getting the measurement}
+\paragraph{}3 winding transformer has three sides (primary, secondary, tertiary)or(high, medium,low), in short circuit test we choose one side connect it to variable voltage source and an Ammeter, we choose another side and we short it by thick wire , we leave the third side open, then we raise the voltage until the current reach the max load current  of the lowest MVA side, we write that voltage for the calculation. we choose another two side and repeat the test,since we have three unknown we need three tests so we can have three equations.
+\paragraph{}for example if we have 110/33/11 kv transformer withe 50,40,20 MVA, we can start by
+shorting the 33kv side and apply the voltage to 110 kv side, for this transformer the 110 kv is 50 MVA, and 33 kv side is 40 MVA, we choose the lowest MVA which is 40,so the target current is $I=40/110000=363.64$, we raise the voltage until we reach this current,manufacturer usually give this voltage as percentage of full voltage if voltage value was 5000 then nameplate will say something like this
+\begin{center}
+	\textbf{H-M 4.54\%}
+\end{center}
+H for High voltage M for medium voltage.
+\paragraph{}then we choose another two winding for example \textbf{H-L}, we  keep the voltage source in the primary,open medium  winding side and short low voltage side, in this case the target current is $I=20\times10^5/(110\times10^3)=181.82$. we choose 20MVA because its the lowest.
+\begin{figure}[H]
+	\begin{center}
+		\begin{circuitikz}[longL/.style = {cute inductor, inductors/scale=0.75,
+				inductors/width=4, inductors/coils=14}]
+			\draw(3,5)to[longL,L=$H$] (3,0)to[short,-*](0,0);
+			\draw(0,0)--(0,2)to[sV=$V$] (0,3) to[smeter,t=$A$](0,5);
+			\draw (3,5)to[short,-*](0,5);
+			\draw (3.5,5)--(3.5,4.5)
+			to[L=$M$](3.5,3.5)--(3.5,3)to[short,-*](5,3)
+			to[short,-*](5,5)--(3.5,5);
+			\draw (3.5,2)--(3.5,1.5)
+			to[L=$L$](3.5,0.5)--(3.5,0)to[short,-*](5,0);
+		    \draw (3.5,2)to[short,-*](5,2);
+			\end{circuitikz}
+		\caption{H-M Test}
+		\label{fig:HLTest}
+	\end{center}
+\end{figure}
+\begin{figure}[H]
+	\begin{center}
+		\begin{circuitikz}
+			\draw (0,2)to[sV=$V$](1,2)to[ammeter=$A$]
+			(3,2)to[generic=$Z1$](5,2);
+			\draw (7,3)
+			to[generic=$Z2$](5,2)to[short](5,2);
+			\draw (7,1)
+			to[generic=$Z3$](5,2);
+			\draw (7,3) --(7,4)--(-1,4) --(-1,2)--(0,2);
+			\draw (8,1) node[above]{$tertiary$} to[short](7,1);
+		\end{circuitikz}
+		\caption{H-M Test Model}
+		\label{fig:HMTestM}
+	\end{center}
+\end{figure}
+\begin{figure}[H]
+	\begin{center}
+		\begin{circuitikz}
+			\draw (8,1)to[sV=$V$](8,2)to[ammeter=$A$]
+			(8,3)--(8,0)--(7,0);
+			\draw (8,3) to[short](7,3)
+			to[generic=$Z2$](5,2)to[short](5,2);
+			\draw (7,1)
+			to[generic=$Z3$](5,2);
+			\draw (7,1) --(7,0);
+			\draw (2,2)node[above]{$primary$} to[short](3,2)to[generic=$Z1$](5,2);
+				\end{circuitikz}
+		\caption{M-L Test}
+		\label{fig:MLTest}
+	\end{center}
+\end{figure}
+\begin{figure}[H]
+	\begin{center}
+		\begin{circuitikz}[longL/.style = {cute inductor, inductors/scale=0.75,
+				inductors/width=4, inductors/coils=14}]
+			\draw(3,5)to[longL,L=$H$] (3,0)to[short,-*](0,0);
+			\draw(0,0)--(0,2)to[sV=$V$] (0,3) to[smeter,t=$A$](0,5);
+			\draw (3,5)to[short,-*](0,5);
+			\draw (3.5,5)--(3.5,4.5)
+			to[L=$M$](3.5,3.5)--(3.5,3)to[short,-*](5,3);
+			\draw 
+			(3.5,5)to[short,-*](5,5);
+			\draw (3.5,2)--(3.5,1.5)
+			to[L=$L$](3.5,0.5)--(3.5,0)to[short,-*](5,0);
+			\draw (3.5,2)to[short,-*] (5,2)--(5,0);
+		\end{circuitikz}
+		\caption{H-L Test}
+		\label{fig:HLTest}
+	\end{center}
+\end{figure}
+\begin{figure}[H]
+	\begin{center}
+		\begin{circuitikz}
+			\draw (0,2)to[sV=$V$](1,2) to[ammeter=$A$]
+			(3,2)to[generic=$Z1$](5,2);
+			\draw (8,3)node[above]{$secondary$} to[short](7,3)
+			to[generic=$Z2$](5,2)to[short](5,2);
+			\draw (7,1)
+			to[generic=$Z3$](5,2);
+			\draw (7,1) --(7,0)--(-1,0) --(-1,2)--(0,2);
+		\end{circuitikz}
+		\caption{H-L Test model}
+		\label{fig:HLTestM}
+	\end{center}
+\end{figure}
+\subsection{Calculations}
+\paragraph{}in many software you don not need any calculation, you just enter the voltage in percent and MVA of each test, in most transformer nameplate the test are \textbf{H-M,H-L,M-L}, but some software need the impedance in per unit value some do not have 3 winding transformer model so you need to calclate the value of \textbf{Z1,Z2,Z2}.
+\paragraph{}figure \hyperref[fig:HMTestM]{HM model} show the equivalent circuit of H-M transformer test, the \textbf{L} Winding is open so no current flow in it the current flow in \textbf{Z1} and \textbf{Z2} only, which are connected in series so:
+\begin{equation*}
+	Z_{12}=\frac{V_{HM}}{I_{HM}}
+\end{equation*}
+$V_{HM}$ is voltage of variable voltage source which give $I_{HM}$.
+\begin{equation}Z_{12}=Z_1+Z_2\end{equation}
+we can do the same for \textbf{H-L} and \textbf{M-L} tests
+\begin{equation*}Z_{13}=\frac{V_{HL}}{I_{HL}}
+\end{equation*}
+\begin{equation}Z_{13}=Z_1+Z_3 \end{equation}
+\begin{equation*}Z_{23}^*=\frac{V_{ML}}{I_{ML}}
+\end{equation*}
+\textbf{Z23*} is measured for medium voltage side, but \textbf{Z12} and Z13 are measured from primary side, we need to convert it primary side so it have the same base as \textbf{Z12} and \textbf{Z13}:
+\begin{equation*}Z_{23}=\left(\frac{V_H}{V_L}\right)^2*Z_{23} \end{equation*}
+\begin{equation}Z_{23}=Z_2+Z_3 \end{equation}
+now we can solve the equations (1),(2)and(3):
+\begin{equation}Z_1=0.5*(Z_{12}+Z_{13}-Z_{23})\end{equation}
+\begin{equation}Z_2=0.5*(Z_{12}-Z_{13}+Z_{23})\end{equation}
+\begin{equation}Z_3=0.5*(-Z_{12}+Z_{13}+Z_{23})\end{equation}
+\textbf{Z1},\textbf{Z2},and \textbf{Z3} are in absolute value referred to primary side,we can divide each one by $Z_{base}$ of primary side to get per unit value. 
+\section{Examples} 
+\subsection{Example 1}
+\end{document}

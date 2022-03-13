@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <CompatibilityMode Value="True"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="neema"/>
+      <Scaled Value="True"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <XPManifest>
+        <DpiAware Value="True"/>
+      </XPManifest>
+      <Icon Value="0"/>
+    </General>
+    <BuildModes Count="4">
+      <Item1 Name="Default" Default="True"/>
+      <Item2 Name="Debug">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <PathDelim Value="\"/>
+          <Target>
+            <Filename Value="neema"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="guicanvas;unittests;..\..\lib\tpmat081\units;..\..\lib\tpmat081\demo\equation"/>
+            <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <Parsing>
+            <SyntaxOptions>
+              <IncludeAssertionCode Value="True"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <Checks>
+              <IOChecks Value="True"/>
+              <RangeChecks Value="True"/>
+              <OverflowChecks Value="True"/>
+              <StackChecks Value="True"/>
+            </Checks>
+            <VerifyObjMethodCallValidity Value="True"/>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <DebugInfoType Value="dsDwarf2Set"/>
+              <UseExternalDbgSyms Value="True"/>
+            </Debugging>
+          </Linking>
+        </CompilerOptions>
+      </Item2>
+      <Item3 Name="Release">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <PathDelim Value="\"/>
+          <Target>
+            <Filename Value="neema"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="guicanvas;unittests;..\..\lib\tpmat081\units;..\..\lib\tpmat081\demo\equation"/>
+            <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+          </Linking>
+        </CompilerOptions>
+      </Item3>
+      <Item4 Name="Debugmemory">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <PathDelim Value="\"/>
+          <Target>
+            <Filename Value="neema"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="guicanvas;unittests;..\..\lib\tpmat081\units;..\..\lib\tpmat081\demo\equation"/>
+            <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <Parsing>
+            <SyntaxOptions>
+              <IncludeAssertionCode Value="True"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <Checks>
+              <IOChecks Value="True"/>
+              <RangeChecks Value="True"/>
+              <OverflowChecks Value="True"/>
+              <StackChecks Value="True"/>
+            </Checks>
+            <VerifyObjMethodCallValidity Value="True"/>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <DebugInfoType Value="dsDwarf2Set"/>
+              <UseHeaptrc Value="True"/>
+              <TrashVariables Value="True"/>
+              <UseExternalDbgSyms Value="True"/>
+            </Debugging>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+        </CompilerOptions>
+      </Item4>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+    </RunParams>
+    <RequiredPackages Count="2">
+      <Item1>
+        <PackageName Value="DateTimeCtrls"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LCL"/>
+      </Item2>
+    </RequiredPackages>
+    <Units Count="65">
+      <Unit0>
+        <Filename Value="neema.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="unit1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="consolappunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ConsolAppUnit"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="guiappunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="GuiAppUnit"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="guicanvas\guicanvasunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="GuiCanvasUnit"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="neemacanvasunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="neemacanvasUnit"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="genircdataunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="GenircDataUnit"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="elementunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="elementUnit"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="electricelentunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ElectricElentUnit"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="drawingunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DrawingUnit"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="busunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="BusUnit"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="multibusunit.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="transmissionlineunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="TransmissionLineUnit"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="persistentobjectlistunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="PersistentObjectListUnit"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="elementfactoryunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ElementFactoryUnit"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="solverunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="SolverUnit"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="loadflowsolverunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="LoadFlowSolverUnit"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="conectionunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ConectionUnit"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="utilunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="UtilUnit"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="nrsolverunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="NrsolverUnit"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="modifyedsleunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ModifyedSleUnit"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="transformer2wunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="TransFormer2WUnit"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="transformer3wshuntunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="TransFormer3WShuntUnit"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="writlnunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="WritlnUnit"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="eemartixunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="EEMartixUnit"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="gridcalsolverunit.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="stateestimationunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="StateEstimationUnit"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="transformer3wunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="TransFormer3WUnit"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="loadunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="LoadUnit"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="transimissionlineformunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="TransimissionLineForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="semeasurementunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="SEMeasurementUnit"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="impedanceunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ImpedanceUnit"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="drawingutilunit.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="drawingboxunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DrawingBoxUnit"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="editingformiunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="EditingFormIUnit"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="transformer2wformunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="TransFormer2wForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="multibusformunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MultiBusForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit36>
+      <Unit37>
+        <Filename Value="transformer3wformunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Transformer3wForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit37>
+      <Unit38>
+        <Filename Value="ttransformer3wshuntformunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Transformer3wShuntForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit38>
+      <Unit39>
+        <Filename Value="stringsplitpatchunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="StringSplitPatchUnit"/>
+      </Unit39>
+      <Unit40>
+        <Filename Value="svcunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="SVCUnit"/>
+      </Unit40>
+      <Unit41>
+        <Filename Value="busediteformunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="BusEditeForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="BusEditeFormUnit"/>
+      </Unit41>
+      <Unit42>
+        <Filename Value="labelunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="LabelUnit"/>
+      </Unit42>
+      <Unit43>
+        <Filename Value="neemalableformunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="NeemaLableForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="NeemaLableFormUnit"/>
+      </Unit43>
+      <Unit44>
+        <Filename Value="drawingpresistanceunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DrawingPresistanceUnit"/>
+      </Unit44>
+      <Unit45>
+        <Filename Value="elementcoloringunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ElementColoringUnit"/>
+      </Unit45>
+      <Unit46>
+        <Filename Value="svcformunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="SVCForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="SVCFormUnit"/>
+      </Unit46>
+      <Unit47>
+        <Filename Value="shuntformunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ShuntForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="ShuntFormUnit"/>
+      </Unit47>
+      <Unit48>
+        <Filename Value="shuntunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ShuntUnit"/>
+      </Unit48>
+      <Unit49>
+        <Filename Value="unusedvarunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="UnusedVarUnit"/>
+      </Unit49>
+      <Unit50>
+        <Filename Value="splashformunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="SplashForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="SplashFormUnit"/>
+      </Unit50>
+      <Unit51>
+        <Filename Value="piimpedanceunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="PiImpedanceUnit"/>
+      </Unit51>
+      <Unit52>
+        <Filename Value="piimpedanceformunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="PiImpedanceForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="PiImpedanceFormUnit"/>
+      </Unit52>
+      <Unit53>
+        <Filename Value="neemadialogmessageunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="NeemaDialogMessageUnit"/>
+      </Unit53>
+      <Unit54>
+        <Filename Value="ieeeimporunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="IeeeImporUnit"/>
+      </Unit54>
+      <Unit55>
+        <Filename Value="guicanvas\cmdunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="CmdUnit"/>
+      </Unit55>
+      <Unit56>
+        <Filename Value="neemalogingunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="NeemaLogingUnit"/>
+      </Unit56>
+      <Unit57>
+        <Filename Value="loadflowoptionformunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="LoadFlowOptionForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="LoadFlowOptionFormUnit"/>
+      </Unit57>
+      <Unit58>
+        <Filename Value="observityunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ObservityUnit"/>
+      </Unit58>
+      <Unit59>
+        <Filename Value="stateestimationoptionformunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="StateEstimationOptionForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="StateEstimationOptionFormUnit"/>
+      </Unit59>
+      <Unit60>
+        <Filename Value="resultformunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ResultForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit60>
+      <Unit61>
+        <Filename Value="buscalculatedvoltageintefaceunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="busCalculatedVoltageintefaceunit"/>
+      </Unit61>
+      <Unit62>
+        <Filename Value="piinterfaceunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="PiInterfaceUnit"/>
+      </Unit62>
+      <Unit63>
+        <Filename Value="elementnamingunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ElementNamingUnit"/>
+      </Unit63>
+      <Unit64>
+        <Filename Value="t3wparatoolunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="T3wParaToolForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit64>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="neema"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="guicanvas;unittests;..\lib\tpmat081\units"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="4">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+      <Item4>
+        <Name Value="EExprParser"/>
+      </Item4>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

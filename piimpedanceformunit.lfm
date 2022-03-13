@@ -1,0 +1,171 @@
+object PiImpedanceForm: TPiImpedanceForm
+  Left = 303
+  Height = 429
+  Top = 128
+  Width = 479
+  Caption = 'PiImpedanceForm'
+  ClientHeight = 429
+  ClientWidth = 479
+  LCLVersion = '2.0.8.0'
+  object VBaseEdit: TEdit
+    Left = 99
+    Height = 23
+    Top = 88
+    Width = 80
+    TabOrder = 0
+    Text = 'VBaseEdit'
+  end
+  object VABaseEdit: TEdit
+    Left = 99
+    Height = 23
+    Top = 48
+    Width = 80
+    TabOrder = 1
+    Text = 'VABaseEdit'
+  end
+  object R1Edit: TEdit
+    Left = 40
+    Height = 23
+    Top = 248
+    Width = 80
+    TabOrder = 2
+    Text = 'R1Edit'
+  end
+  object X1Edit: TEdit
+    Left = 40
+    Height = 23
+    Top = 280
+    Width = 80
+    TabOrder = 3
+    Text = 'X1Edit'
+  end
+  object R2Edit: TEdit
+    Left = 184
+    Height = 23
+    Top = 168
+    Width = 80
+    TabOrder = 4
+    Text = 'R2Edit'
+  end
+  object X2Edit: TEdit
+    Left = 184
+    Height = 23
+    Top = 208
+    Width = 80
+    TabOrder = 5
+    Text = 'X2Edit'
+  end
+  object R3Edit: TEdit
+    Left = 360
+    Height = 23
+    Top = 248
+    Width = 80
+    TabOrder = 6
+    Text = 'R3Edit'
+  end
+  object X3Edit: TEdit
+    Left = 360
+    Height = 23
+    Top = 280
+    Width = 80
+    TabOrder = 7
+    Text = 'X3Edit'
+  end
+  object SaveButton: TButton
+    Left = 168
+    Height = 42
+    Top = 360
+    Width = 107
+    Caption = 'save'
+    OnClick = SaveButtonClick
+    TabOrder = 8
+  end
+  object Label1: TLabel
+    Left = 48
+    Height = 15
+    Top = 48
+    Width = 42
+    Caption = 'base VA'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 48
+    Height = 15
+    Top = 88
+    Width = 48
+    Caption = 'Base Volt'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 19
+    Height = 15
+    Top = 253
+    Width = 10
+    Caption = 'r1'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 19
+    Height = 15
+    Top = 281
+    Width = 11
+    Caption = 'x1'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 148
+    Height = 15
+    Top = 169
+    Width = 10
+    Caption = 'r2'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 145
+    Height = 15
+    Top = 208
+    Width = 11
+    Caption = 'x2'
+    ParentColor = False
+  end
+  object Label7: TLabel
+    Left = 329
+    Height = 15
+    Top = 254
+    Width = 10
+    Caption = 'r3'
+    ParentColor = False
+  end
+  object Label8: TLabel
+    Left = 328
+    Height = 15
+    Top = 281
+    Width = 11
+    Caption = 'x3'
+    ParentColor = False
+  end
+  object SetAButton: TButton
+    Left = 184
+    Height = 25
+    Top = 246
+    Width = 75
+    Caption = 'transformer'
+    OnClick = SetAButtonClick
+    TabOrder = 9
+  end
+  object NameEdit: TEdit
+    Left = 184
+    Height = 23
+    Top = 328
+    Width = 80
+    TabOrder = 10
+  end
+  object Label9: TLabel
+    Left = 144
+    Height = 15
+    Top = 328
+    Width = 30
+    Caption = 'name'
+    ParentColor = False
+  end
+end

@@ -1,0 +1,18 @@
+TDrawingPresistance
+{ "BackgroundColor" : 0, "Name" : "GUINET1" }
+TMultiBus
+{ "BC12Closed" : true, "BaseVA" : "100MVA", "BaseVolt" : "500KV", "Bus1Type" : "slackbus", "Bus1VoltageI" : "0", "Bus1VoltageR" : "535KV", "Bus2Type" : "loadbus", "Bus2VoltageI" : "0", "Bus2VoltageR" : "1", "ConectionsStr" : "2,3", "ID" : 0, "Injected1P" : "0", "Injected1Q" : "0", "Injected2P" : "0", "Injected2Q" : "0", "MaxRegulation1Q" : "0", "MaxRegulation2Q" : "0", "MinRegulation1Q" : "0", "MinRegulation2Q" : "0", "Name" : "MWP500", "ServerData" : "V1:Null:Null:0;V2:Null:Null:0;", "SubBusIndexsStr" : "0,0", "SubBussNames" : "tempSubus,0\ntempSubus,1\n", "Visable" : false, "XPos" : 76, "YPos" : 396 }
+TMultiBus
+{ "BC12Closed" : true, "BaseVA" : "100MVA", "BaseVolt" : "500KV", "Bus1Type" : "loadbus", "Bus1VoltageI" : "0", "Bus1VoltageR" : "1", "Bus2Type" : "loadbus", "Bus2VoltageI" : "0", "Bus2VoltageR" : "1", "ConectionsStr" : "2,3", "ID" : 1, "Injected1P" : "-500MW", "Injected1Q" : "-250MVAR", "Injected2P" : "0", "Injected2Q" : "0", "MaxRegulation1Q" : "0", "MaxRegulation2Q" : "0", "MinRegulation1Q" : "0", "MinRegulation2Q" : "0", "Name" : "MRK500", "ServerData" : "V1:Null:Null:0;V2:Null:Null:0;", "SubBusIndexsStr" : "0,1", "SubBussNames" : "tempSubus,0\ntempSubus,1\n", "Visable" : false, "XPos" : 171, "YPos" : 60 }
+TLine
+{ "BaseVA" : "100 MVA", "BaseVolt" : "500kv", "C" : "243300.37925842", "CB1Close" : true, "CB2Close" : true, "ConectionsStr" : "0,1", "ID" : 2, "Length" : "346", "Name" : "", "R" : "0.028", "RC1" : "125MVAR", "RC1Close" : true, "RC2" : "125MVAR", "RC2Close" : true, "ServerData" : "P1:Null:Null:0;P2:Null:Null:0;Q1:Null:Null:0;Q2:Null:Null:0;V1:Null:Null:0;V2:Null:Null:0;I1:Null:Null:0;I2:Null:Null:0;", "Visable" : false, "XPos" : 118, "YPos" : 299, "x" : "0.276" }
+TLine
+{ "BaseVA" : "100 MVA", "BaseVolt" : "500kv", "C" : "243300.37925842", "CB1Close" : true, "CB2Close" : true, "ConectionsStr" : "0,1", "ID" : 3, "Length" : "346", "Name" : "", "R" : "0.028", "RC1" : "125MVAR", "RC1Close" : true, "RC2" : "125MVAR", "RC2Close" : true, "ServerData" : "P1:Null:Null:0;P2:Null:Null:0;Q1:Null:Null:0;Q2:Null:Null:0;V1:Null:Null:0;V2:Null:Null:0;I1:Null:Null:0;I2:Null:Null:0;", "Visable" : false, "XPos" : 178, "YPos" : 181, "x" : "0.276" }
+TConection
+{ "BaseVA" : "1", "BaseVolt" : "1", "ConectionsStr" : "", "ID" : 4, "ID1" : 0, "ID2" : 2, "Name" : "", "ServerData" : "", "Visable" : false, "X1" : 126, "X2" : 118, "XPos" : 0, "Y1" : 436, "Y2" : 304, "YPos" : 0 }
+TConection
+{ "BaseVA" : "1", "BaseVolt" : "1", "ConectionsStr" : "", "ID" : 5, "ID1" : 0, "ID2" : 3, "Name" : "", "ServerData" : "", "Visable" : false, "X1" : 176, "X2" : 178, "XPos" : 0, "Y1" : 436, "Y2" : 186, "YPos" : 0 }
+TConection
+{ "BaseVA" : "1", "BaseVolt" : "1", "ConectionsStr" : "", "ID" : 6, "ID1" : 1, "ID2" : 2, "Name" : "", "ServerData" : "", "Visable" : false, "X1" : 221, "X2" : 298, "XPos" : 0, "Y1" : 100, "Y2" : 304, "YPos" : 0 }
+TConection
+{ "BaseVA" : "1", "BaseVolt" : "1", "ConectionsStr" : "", "ID" : 7, "ID1" : 1, "ID2" : 3, "Name" : "", "ServerData" : "", "Visable" : false, "X1" : 271, "X2" : 358, "XPos" : 0, "Y1" : 100, "Y2" : 186, "YPos" : 0 }

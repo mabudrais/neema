@@ -1,0 +1,2 @@
+TBus
+{ "BaseVA" : "", "BaseVolt" : "", "BusType" : "slackbus", "BusVoltageI" : "", "BusVoltageR" : "", "ConectionsStr" : "", "ID" : 0, "InjectedP" : "", "InjectedQ" : "", "MaxRegulationQ" : "", "MinRegulationQ" : "", "Name" : "", "Visable" : false, "XPos" : 251, "YPos" : 135 }

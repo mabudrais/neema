@@ -1,0 +1,12 @@
+TDrawingPresistance
+{ "BackgroundColor" : 0, "Name" : "PORES" }
+TBus
+{ "BaseVA" : "100MVA", "BaseVolt" : "220KV", "BusType" : "slackbus", "BusVoltageI" : "0", "BusVoltageR" : "225KV", "ConectionsStr" : "2", "ID" : 0, "InjectedP" : "0", "InjectedQ" : "0", "MaxRegulationQ" : "0", "MinRegulationQ" : "0", "Name" : "TBus0", "ServerData" : "V:225000:Null:0;", "Visable" : false, "XPos" : 40, "YPos" : 62 }
+TBus
+{ "BaseVA" : "100MVA", "BaseVolt" : "220KV", "BusType" : "loadbus", "BusVoltageI" : "0", "BusVoltageR" : "220KV", "ConectionsStr" : "2", "ID" : 1, "InjectedP" : "0", "InjectedQ" : "0", "MaxRegulationQ" : "0", "MinRegulationQ" : "0", "Name" : "POR", "ServerData" : "V:Null:Null:0;", "Visable" : false, "XPos" : 462, "YPos" : 78 }
+TLine
+{ "BaseVA" : "100 MVA", "BaseVolt" : "220kv", "C" : "352893.443662739", "CB1Close" : true, "CB2Close" : true, "ConectionsStr" : "0,1", "ID" : 2, "Length" : "448.92", "Name" : "ATBPOR", "R" : "0.076", "RC1" : "40MVAR", "RC1Close" : true, "RC2" : "", "RC2Close" : false, "ServerData" : "P1:50e6:Null:0;P2:Null:Null:0;Q1:15e6:Null:0;Q2:Null:Null:0;V1:Null:Null:0;V2:Null:Null:0;I1:Null:Null:0;I2:Null:Null:0;", "Visable" : false, "XPos" : 227, "YPos" : 81, "x" : "0.403" }
+TConection
+{ "BaseVA" : "1", "BaseVolt" : "1", "ConectionsStr" : "", "ID" : 3, "ID1" : 0, "ID2" : 2, "Name" : "", "ServerData" : "", "Visable" : false, "X1" : 40, "X2" : 227, "XPos" : 0, "Y1" : 62, "Y2" : 86, "YPos" : 0 }
+TConection
+{ "BaseVA" : "1", "BaseVolt" : "1", "ConectionsStr" : "", "ID" : 4, "ID1" : 1, "ID2" : 2, "Name" : "", "ServerData" : "", "Visable" : false, "X1" : 462, "X2" : 407, "XPos" : 0, "Y1" : 78, "Y2" : 86, "YPos" : 0 }

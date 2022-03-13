@@ -1,0 +1,30 @@
+TDrawingPresistance
+{ "BackgroundColor" : 0, "Name" : "ieee14" }
+TBus
+{ "BaseVA" : "1", "BaseVolt" : "1", "BusType" : "slackbus", "BusVoltageI" : "0", "BusVoltageR" : "1.06", "ConectionsStr" : "", "ID" : 0, "InjectedP" : "0", "InjectedQ" : "0", "MaxRegulationQ" : "0", "MinRegulationQ" : "0", "Name" : "bus1", "Visable" : false, "XPos" : 39, "YPos" : 26 }
+TBus
+{ "BaseVA" : "1", "BaseVolt" : "1", "BusType" : "regulatingbus", "BusVoltageI" : "0", "BusVoltageR" : "1.05", "ConectionsStr" : "", "ID" : 1, "InjectedP" : "0.4-0.217", "InjectedQ" : "0", "MaxRegulationQ" : "0", "MinRegulationQ" : "0", "Name" : "bus2", "Visable" : false, "XPos" : 314, "YPos" : 32 }
+TBus
+{ "BaseVA" : "1", "BaseVolt" : "1", "BusType" : "regulatingbus", "BusVoltageI" : "0", "BusVoltageR" : "1.01", "ConectionsStr" : "", "ID" : 2, "InjectedP" : "-.94", "InjectedQ" : "0", "MaxRegulationQ" : "0", "MinRegulationQ" : "0", "Name" : "bus3", "Visable" : false, "XPos" : 638, "YPos" : 30 }
+TBus
+{ "BaseVA" : "1", "BaseVolt" : "1", "BusType" : "loadbus", "BusVoltageI" : "0", "BusVoltageR" : "1", "ConectionsStr" : "", "ID" : 3, "InjectedP" : "-0.076", "InjectedQ" : "-0.016", "MaxRegulationQ" : "0", "MinRegulationQ" : "0", "Name" : "bus5", "Visable" : false, "XPos" : 61, "YPos" : 116 }
+TBus
+{ "BaseVA" : "1", "BaseVolt" : "1", "BusType" : "loadbus", "BusVoltageI" : "0", "BusVoltageR" : "1", "ConectionsStr" : "", "ID" : 4, "InjectedP" : "-0.47", "InjectedQ" : "0.039", "MaxRegulationQ" : "0", "MinRegulationQ" : "0", "Name" : "bus4", "Visable" : false, "XPos" : 315, "YPos" : 124 }
+TBus
+{ "BaseVA" : "1", "BaseVolt" : "1", "BusType" : "loadbus", "BusVoltageI" : "0", "BusVoltageR" : "1", "ConectionsStr" : "", "ID" : 5, "InjectedP" : "0", "InjectedQ" : "0", "MaxRegulationQ" : "0", "MinRegulationQ" : "0", "Name" : "bus7", "Visable" : false, "XPos" : 659, "YPos" : 116 }
+TBus
+{ "BaseVA" : "1", "BaseVolt" : "1", "BusType" : "regulatingbus", "BusVoltageI" : "0", "BusVoltageR" : "1.09", "ConectionsStr" : "", "ID" : 6, "InjectedP" : "0", "InjectedQ" : "0", "MaxRegulationQ" : "0", "MinRegulationQ" : "0", "Name" : "bus8", "Visable" : false, "XPos" : 994, "YPos" : 118 }
+TBus
+{ "BaseVA" : "1", "BaseVolt" : "1", "BusType" : "loadbus", "BusVoltageI" : "0", "BusVoltageR" : "1", "ConectionsStr" : "", "ID" : 7, "InjectedP" : "-0.035", "InjectedQ" : "-0.018", "MaxRegulationQ" : "0", "MinRegulationQ" : "0", "Name" : "bus11", "Visable" : false, "XPos" : 349, "YPos" : 251 }
+TBus
+{ "BaseVA" : "1", "BaseVolt" : "1", "BusType" : "loadbus", "BusVoltageI" : "0", "BusVoltageR" : "1", "ConectionsStr" : "", "ID" : 8, "InjectedP" : "-0.295", "InjectedQ" : "-0.166", "MaxRegulationQ" : "0", "MinRegulationQ" : "0", "Name" : "bus9", "Visable" : false, "XPos" : 675, "YPos" : 243 }
+TBus
+{ "BaseVA" : "1", "BaseVolt" : "1", "BusType" : "loadbus", "BusVoltageI" : "0", "BusVoltageR" : "1", "ConectionsStr" : "", "ID" : 9, "InjectedP" : "-0.149", "InjectedQ" : "-0.05", "MaxRegulationQ" : "0", "MinRegulationQ" : "0", "Name" : "bus14", "Visable" : false, "XPos" : 1033, "YPos" : 255 }
+TBus
+{ "BaseVA" : "1", "BaseVolt" : "1", "BusType" : "regulatingbus", "BusVoltageI" : "0", "BusVoltageR" : "1.07", "ConectionsStr" : "", "ID" : 10, "InjectedP" : "-0.112", "InjectedQ" : "0", "MaxRegulationQ" : "0", "MinRegulationQ" : "0", "Name" : "bus6", "Visable" : false, "XPos" : 131, "YPos" : 377 }
+TBus
+{ "BaseVA" : "1", "BaseVolt" : "1", "BusType" : "loadbus", "BusVoltageI" : "0", "BusVoltageR" : "1", "ConectionsStr" : "", "ID" : 11, "InjectedP" : "-0.09", "InjectedQ" : "-0.058", "MaxRegulationQ" : "0", "MinRegulationQ" : "0", "Name" : "bus10", "Visable" : false, "XPos" : 544, "YPos" : 386 }
+TBus
+{ "BaseVA" : "1", "BaseVolt" : "1", "BusType" : "loadbus", "BusVoltageI" : "0", "BusVoltageR" : "1", "ConectionsStr" : "", "ID" : 12, "InjectedP" : "-0.061", "InjectedQ" : "-0.016", "MaxRegulationQ" : "0", "MinRegulationQ" : "0", "Name" : "bus12", "Visable" : false, "XPos" : 323, "YPos" : 500 }
+TBus
+{ "BaseVA" : "1", "BaseVolt" : "1", "BusType" : "loadbus", "BusVoltageI" : "0", "BusVoltageR" : "1", "ConectionsStr" : "", "ID" : 13, "InjectedP" : "0", "InjectedQ" : "-0.135", "MaxRegulationQ" : "-0.058", "MinRegulationQ" : "0", "Name" : "bus13", "Visable" : false, "XPos" : 827, "YPos" : 493 }

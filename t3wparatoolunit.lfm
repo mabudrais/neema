@@ -1,0 +1,328 @@
+object T3wParaToolForm: TT3wParaToolForm
+  Left = 319
+  Height = 523
+  Top = 55
+  Width = 648
+  Caption = 'T3wParaToolForm'
+  ClientHeight = 523
+  ClientWidth = 648
+  LCLVersion = '2.2.0.4'
+  object R12Edit: TEdit
+    Left = 496
+    Height = 26
+    Top = 88
+    Width = 80
+    Enabled = False
+    OnChange = R12EditChange
+    TabOrder = 0
+    Text = 'R12Edit'
+    Visible = False
+  end
+  object R13Edit: TEdit
+    Left = 504
+    Height = 26
+    Top = 8
+    Width = 80
+    TabOrder = 1
+    Text = 'R13Edit'
+    Visible = False
+  end
+  object R23Edit: TEdit
+    Left = 504
+    Height = 26
+    Top = 144
+    Width = 80
+    TabOrder = 2
+    Text = 'R23Edit'
+    Visible = False
+  end
+  object X12Edit: TEdit
+    Left = 45
+    Height = 26
+    Top = 88
+    Width = 80
+    OnChange = R12EditChange
+    TabOrder = 3
+    Text = '8'
+  end
+  object X13Edit: TEdit
+    Left = 157
+    Height = 26
+    Top = 88
+    Width = 80
+    OnChange = R12EditChange
+    TabOrder = 4
+    Text = '13'
+  end
+  object X23Edit: TEdit
+    Left = 269
+    Height = 26
+    Top = 88
+    Width = 80
+    OnChange = R12EditChange
+    TabOrder = 5
+    Text = '5'
+  end
+  object MVA12Edit: TEdit
+    Left = 45
+    Height = 26
+    Top = 160
+    Width = 80
+    OnChange = R12EditChange
+    TabOrder = 6
+    Text = '150MVA'
+  end
+  object MVA13Edit: TEdit
+    Left = 157
+    Height = 26
+    Top = 160
+    Width = 80
+    OnChange = R12EditChange
+    TabOrder = 7
+    Text = '100MVa'
+  end
+  object MVA23Edit: TEdit
+    Left = 269
+    Height = 26
+    Top = 160
+    Width = 80
+    OnChange = R12EditChange
+    TabOrder = 8
+    Text = '100MVa'
+  end
+  object X1Edit: TEdit
+    Left = 45
+    Height = 26
+    Top = 248
+    Width = 80
+    ReadOnly = True
+    TabOrder = 9
+    Text = 'X1Edit'
+  end
+  object X2Edit: TEdit
+    Left = 157
+    Height = 26
+    Top = 248
+    Width = 80
+    ReadOnly = True
+    TabOrder = 10
+    Text = 'X2Edit'
+  end
+  object X3Edit: TEdit
+    Left = 269
+    Height = 26
+    Top = 248
+    Width = 80
+    ReadOnly = True
+    TabOrder = 11
+    Text = 'X3Edit'
+  end
+  object ErrorLabel: TLabel
+    Left = 48
+    Height = 17
+    Top = 288
+    Width = 72
+    Caption = 'ErrorLabel'
+  end
+  object V1Edit: TEdit
+    Left = 40
+    Height = 26
+    Top = 24
+    Width = 80
+    OnChange = R12EditChange
+    TabOrder = 12
+    Text = '100'
+  end
+  object V2Edit: TEdit
+    Left = 160
+    Height = 26
+    Top = 24
+    Width = 80
+    OnChange = R12EditChange
+    TabOrder = 13
+    Text = '50'
+  end
+  object V3Edit: TEdit
+    Left = 272
+    Height = 26
+    Top = 24
+    Width = 80
+    OnChange = R12EditChange
+    TabOrder = 14
+    Text = '30'
+  end
+  object V1Label: TLabel
+    Left = 64
+    Height = 17
+    Top = 8
+    Width = 18
+    Caption = 'V1'
+  end
+  object V2Label: TLabel
+    Left = 176
+    Height = 17
+    Top = 8
+    Width = 18
+    Caption = 'V2'
+  end
+  object V3Label: TLabel
+    Left = 292
+    Height = 17
+    Top = 8
+    Width = 18
+    Caption = 'V3'
+  end
+  object X12PercentLabel: TLabel
+    Left = 61
+    Height = 17
+    Top = 71
+    Width = 38
+    Caption = '%X12'
+  end
+  object X13PercentLabel: TLabel
+    Left = 176
+    Height = 17
+    Top = 71
+    Width = 38
+    Caption = '%X13'
+  end
+  object X23PercentLabel: TLabel
+    Left = 292
+    Height = 17
+    Top = 71
+    Width = 38
+    Caption = '%X23'
+  end
+  object VA12Label: TLabel
+    Left = 64
+    Height = 17
+    Top = 144
+    Width = 35
+    Caption = 'VA12'
+  end
+  object VA13Label: TLabel
+    Left = 176
+    Height = 17
+    Top = 144
+    Width = 35
+    Caption = 'VA13'
+  end
+  object VA23Label: TLabel
+    Left = 280
+    Height = 17
+    Top = 144
+    Width = 35
+    Caption = 'VA23'
+  end
+  object X1Label: TLabel
+    Left = 57
+    Height = 17
+    Top = 232
+    Width = 17
+    Caption = 'X1'
+  end
+  object X2Label: TLabel
+    Left = 160
+    Height = 17
+    Top = 232
+    Width = 17
+    Caption = 'X2'
+  end
+  object X3Label: TLabel
+    Left = 280
+    Height = 17
+    Top = 232
+    Width = 17
+    Caption = 'X3'
+  end
+  object PerUnitGroupBox: TGroupBox
+    Left = 29
+    Height = 181
+    Top = 328
+    Width = 521
+    Caption = 'per unit'
+    ClientHeight = 162
+    ClientWidth = 517
+    TabOrder = 15
+    object BaseVEdit: TEdit
+      Left = 135
+      Height = 26
+      Top = 32
+      Width = 80
+      OnChange = R12EditChange
+      TabOrder = 0
+      Text = '220KV'
+    end
+    object X3PerUnitLabel2: TLabel
+      Left = 256
+      Height = 17
+      Top = 80
+      Width = 39
+      Caption = 'X3 PU'
+    end
+    object X2PerUnitLabel: TLabel
+      Left = 144
+      Height = 17
+      Top = 80
+      Width = 39
+      Caption = 'X2 PU'
+    end
+    object X1PerUnitLabel: TLabel
+      Left = 40
+      Height = 17
+      Top = 80
+      Width = 39
+      Caption = 'X1 PU'
+    end
+    object X1PerUnitEdit: TEdit
+      Left = 24
+      Height = 26
+      Top = 104
+      Width = 80
+      ReadOnly = True
+      TabOrder = 1
+      Text = 'X1PerUnitEdit'
+    end
+    object X3PerUnitEdit: TEdit
+      Left = 248
+      Height = 26
+      Top = 104
+      Width = 80
+      ReadOnly = True
+      TabOrder = 2
+      Text = 'X3PerUnitEdit'
+    end
+    object X2PerUnitEdit: TEdit
+      Left = 135
+      Height = 26
+      Top = 104
+      Width = 80
+      ReadOnly = True
+      TabOrder = 3
+      Text = 'X2PerUnitEdit'
+    end
+    object BaseVAEdit: TEdit
+      Left = 24
+      Height = 26
+      Top = 32
+      Width = 80
+      OnChange = R12EditChange
+      TabOrder = 4
+      Text = '100MVA'
+    end
+    object BaseVALabel: TLabel
+      Left = 40
+      Height = 17
+      Top = 8
+      Width = 54
+      Caption = 'Base VA'
+    end
+    object BaseVLabel: TLabel
+      Left = 152
+      Height = 17
+      Top = 8
+      Width = 45
+      Caption = 'Base V'
+    end
+  end
+end

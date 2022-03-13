@@ -1,0 +1,41 @@
+object LoadFlowOptionForm: TLoadFlowOptionForm
+  Left = 394
+  Height = 380
+  Top = 142
+  Width = 562
+  Caption = 'LoadFlowOptionForm'
+  ClientHeight = 380
+  ClientWidth = 562
+  OnCreate = FormCreate
+  LCLVersion = '2.0.12.0'
+  object RunButton: TButton
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = StartTypeComboBox
+    AnchorSideTop.Side = asrBottom
+    Left = 0
+    Height = 55
+    Top = 30
+    Width = 126
+    BorderSpacing.Top = 2
+    Caption = 'RunButton'
+    OnClick = RunButtonClick
+    TabOrder = 0
+  end
+  object StartTypeComboBox: TComboBox
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    Left = 0
+    Height = 28
+    Top = 0
+    Width = 190
+    ItemHeight = 0
+    ItemIndex = 0
+    Items.Strings = (
+      'FlatStart'
+      'CalculatedVoltages'
+      'EnterdVoltages'
+    )
+    TabOrder = 1
+    Text = 'FlatStart'
+  end
+end

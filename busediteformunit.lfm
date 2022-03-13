@@ -1,0 +1,282 @@
+object BusEditeForm: TBusEditeForm
+  Left = 356
+  Height = 467
+  Top = 137
+  Width = 781
+  Caption = 'BusEditeForm'
+  ClientHeight = 467
+  ClientWidth = 781
+  LCLVersion = '2.2.0.4'
+  object PageControl1: TPageControl
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 0
+    Height = 467
+    Top = 0
+    Width = 781
+    ActivePage = BasicDataTabSheet
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    TabIndex = 0
+    TabOrder = 0
+    object BasicDataTabSheet: TTabSheet
+      Caption = 'Basic Data'
+      ClientHeight = 432
+      ClientWidth = 775
+      object NameLabel: TLabel
+        Left = 39
+        Height = 17
+        Top = 312
+        Width = 40
+        Caption = 'Name'
+      end
+      object MinVarLabel: TLabel
+        Left = 34
+        Height = 17
+        Top = 280
+        Width = 51
+        Caption = 'Min Var'
+      end
+      object MaxVarLabel: TLabel
+        Left = 32
+        Height = 17
+        Top = 240
+        Width = 55
+        Caption = 'Max Var'
+      end
+      object NameEdit: TEdit
+        AnchorSideLeft.Control = BASEMVAEdit
+        AnchorSideTop.Control = NameLabel
+        Left = 129
+        Height = 26
+        Top = 312
+        Width = 80
+        TabOrder = 0
+      end
+      object BusVoltageIEdit: TEdit
+        AnchorSideLeft.Control = BASEMVAEdit
+        AnchorSideTop.Control = VoltImageLabel
+        Left = 129
+        Height = 26
+        Top = 144
+        Width = 80
+        TabOrder = 1
+        Text = 'BusVoltageIEdit'
+      end
+      object VarLabel: TLabel
+        Left = 32
+        Height = 17
+        Top = 208
+        Width = 23
+        Caption = 'Var'
+      end
+      object BusVoltageREdit: TEdit
+        AnchorSideLeft.Control = BASEMVAEdit
+        AnchorSideTop.Control = VoltRealLabel
+        Left = 129
+        Height = 26
+        Top = 112
+        Width = 80
+        TabOrder = 2
+        Text = 'BusVoltageREdit'
+      end
+      object WatLabel: TLabel
+        Left = 32
+        Height = 17
+        Top = 176
+        Width = 27
+        Caption = 'Wat'
+      end
+      object VoltImageLabel: TLabel
+        Left = 32
+        Height = 17
+        Top = 144
+        Width = 72
+        Caption = 'Volt image'
+      end
+      object VoltRealLabel: TLabel
+        Left = 32
+        Height = 17
+        Top = 112
+        Width = 57
+        Caption = 'Volt real'
+      end
+      object BusTypeLabel: TLabel
+        Left = 32
+        Height = 17
+        Top = 72
+        Width = 59
+        Caption = 'Bus Type'
+      end
+      object BaseVoltLabel: TLabel
+        Left = 32
+        Height = 17
+        Top = 40
+        Width = 63
+        Caption = 'Base Volt'
+      end
+      object BaseMVALabel: TLabel
+        Left = 32
+        Height = 17
+        Top = 8
+        Width = 67
+        Caption = 'Base MVA'
+      end
+      object BASEMVAEdit: TEdit
+        AnchorSideLeft.Control = BaseMVALabel
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = BaseMVALabel
+        Left = 129
+        Height = 26
+        Top = 8
+        Width = 100
+        BorderSpacing.Left = 30
+        TabOrder = 3
+        Text = 'BASEMVAEdit'
+      end
+      object MinVAREdit: TEdit
+        AnchorSideLeft.Control = BASEMVAEdit
+        AnchorSideTop.Control = MinVarLabel
+        Left = 129
+        Height = 26
+        Top = 280
+        Width = 80
+        Enabled = False
+        TabOrder = 4
+        Text = '0'
+      end
+      object MaxVAREdit: TEdit
+        AnchorSideLeft.Control = BASEMVAEdit
+        AnchorSideTop.Control = MaxVarLabel
+        Left = 129
+        Height = 26
+        Top = 240
+        Width = 80
+        Enabled = False
+        TabOrder = 5
+        Text = '0'
+      end
+      object SaveButton: TButton
+        AnchorSideLeft.Control = BasicDataTabSheet
+        AnchorSideTop.Control = NameEdit
+        AnchorSideTop.Side = asrBottom
+        Left = 0
+        Height = 40
+        Top = 343
+        Width = 107
+        BorderSpacing.Top = 5
+        Caption = 'save'
+        OnClick = SaveButtonClick
+        TabOrder = 6
+      end
+      object BusTypeComboBox: TComboBox
+        AnchorSideLeft.Control = BASEMVAEdit
+        AnchorSideTop.Control = BusTypeLabel
+        Left = 129
+        Height = 28
+        Top = 72
+        Width = 150
+        ItemHeight = 0
+        Items.Strings = (
+          'Slack'
+          'Regulating'
+          'Load'
+        )
+        OnChange = BusTypeComboBoxChange
+        TabOrder = 7
+        Text = 'BusTypeComboBox'
+      end
+      object VAREdit: TEdit
+        AnchorSideLeft.Control = BASEMVAEdit
+        AnchorSideTop.Control = VarLabel
+        Left = 129
+        Height = 26
+        Top = 208
+        Width = 80
+        TabOrder = 8
+        Text = '0'
+      end
+      object WEdit: TEdit
+        AnchorSideLeft.Control = BASEMVAEdit
+        AnchorSideTop.Control = WatLabel
+        Left = 129
+        Height = 26
+        Top = 176
+        Width = 80
+        TabOrder = 9
+        Text = '0'
+      end
+      object BaseVoltEdit: TEdit
+        AnchorSideLeft.Control = BASEMVAEdit
+        AnchorSideTop.Control = BaseVoltLabel
+        Left = 129
+        Height = 26
+        Top = 40
+        Width = 100
+        TabOrder = 10
+        Text = '1'
+      end
+    end
+    object SETabSheet: TTabSheet
+      Caption = 'State Estimation'
+      ClientHeight = 432
+      ClientWidth = 775
+      object MeasureStringGrid: TStringGrid
+        AnchorSideLeft.Control = SETabSheet
+        AnchorSideTop.Control = SETabSheet
+        AnchorSideRight.Control = SETabSheet
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = SETabSheet
+        AnchorSideBottom.Side = asrBottom
+        Left = 0
+        Height = 432
+        Top = 0
+        Width = 600
+        Anchors = [akTop, akLeft, akBottom]
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+        TabOrder = 0
+        ColWidths = (
+          44
+          167
+          139
+          62
+          123
+        )
+        Cells = (
+          5
+          0
+          0
+          'type'
+          1
+          0
+          'value1'
+          2
+          0
+          'value2'
+          3
+          0
+          'weight'
+          4
+          0
+          'value'
+        )
+      end
+      object SESaveButton: TButton
+        AnchorSideLeft.Control = MeasureStringGrid
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = MeasureStringGrid
+        Left = 602
+        Height = 41
+        Top = 0
+        Width = 99
+        BorderSpacing.Left = 2
+        Caption = 'save'
+        OnClick = SESaveButtonClick
+        TabOrder = 1
+      end
+    end
+  end
+end

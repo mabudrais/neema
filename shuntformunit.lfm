@@ -1,0 +1,84 @@
+object ShuntForm: TShuntForm
+  Left = 303
+  Height = 240
+  Top = 128
+  Width = 320
+  Caption = 'ShuntForm'
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '2.2.0.4'
+  object BaseVoltEdit: TEdit
+    Left = 99
+    Height = 26
+    Top = 19
+    Width = 80
+    TabOrder = 0
+  end
+  object BASEMVA_Edit: TEdit
+    Left = 99
+    Height = 26
+    Top = 53
+    Width = 80
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 21
+    Height = 17
+    Top = 19
+    Width = 61
+    Caption = 'base volt'
+  end
+  object Label2: TLabel
+    Left = 24
+    Height = 17
+    Top = 53
+    Width = 54
+    Caption = 'base VA'
+  end
+  object VarEdit: TEdit
+    Left = 99
+    Height = 26
+    Top = 96
+    Width = 80
+    TabOrder = 2
+    Text = 'VarEdit'
+  end
+  object SaveButton: TButton
+    Left = 88
+    Height = 39
+    Top = 192
+    Width = 99
+    Caption = 'save'
+    OnClick = SaveButtonClick
+    TabOrder = 3
+  end
+  object VarLabel: TLabel
+    Left = 29
+    Height = 17
+    Top = 96
+    Width = 23
+    Caption = 'Var'
+  end
+  object NameEdit: TEdit
+    Left = 99
+    Height = 26
+    Top = 128
+    Width = 80
+    TabOrder = 4
+  end
+  object Label4: TLabel
+    Left = 24
+    Height = 17
+    Top = 128
+    Width = 37
+    Caption = 'name'
+  end
+  object CBCheckBox: TCheckBox
+    Left = 88
+    Height = 22
+    Top = 158
+    Width = 42
+    Caption = 'CB'
+    TabOrder = 5
+  end
+end

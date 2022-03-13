@@ -1,0 +1,381 @@
+object Transformer3wShuntForm: TTransformer3wShuntForm
+  Left = 266
+  Height = 542
+  Top = 119
+  Width = 864
+  Caption = 'Transformer3wShunt'
+  ClientHeight = 542
+  ClientWidth = 864
+  LCLVersion = '2.2.0.4'
+  object PageControl1: TPageControl
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 0
+    Height = 542
+    Top = 0
+    Width = 864
+    ActivePage = TabSheet1
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    TabIndex = 0
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'TabSheet1'
+      ClientHeight = 507
+      ClientWidth = 858
+      object Label18: TLabel
+        Left = 580
+        Height = 17
+        Top = 261
+        Width = 56
+        Caption = 'tap step'
+      end
+      object TapStep_Edit: TEdit
+        Left = 576
+        Height = 26
+        Top = 288
+        Width = 80
+        TabOrder = 0
+        Text = 'TapStep_Edit'
+      end
+      object Label17: TLabel
+        Left = 304
+        Height = 17
+        Top = 393
+        Width = 37
+        Caption = 'name'
+      end
+      object NameEdit: TEdit
+        Left = 359
+        Height = 26
+        Top = 393
+        Width = 80
+        TabOrder = 1
+      end
+      object Label16: TLabel
+        Left = 344
+        Height = 17
+        Top = 136
+        Width = 18
+        Caption = 'V3'
+      end
+      object Label15: TLabel
+        Left = 222
+        Height = 17
+        Top = 137
+        Width = 18
+        Caption = 'V2'
+      end
+      object Label5: TLabel
+        Left = 126
+        Height = 17
+        Top = 136
+        Width = 18
+        Caption = 'V1'
+      end
+      object V3Edit: TEdit
+        Left = 330
+        Height = 26
+        Top = 153
+        Width = 80
+        TabOrder = 2
+        Text = 'V3Edit'
+      end
+      object V2Edit: TEdit
+        Left = 208
+        Height = 26
+        Top = 153
+        Width = 80
+        TabOrder = 3
+        Text = 'V2Edit'
+      end
+      object V1Edit: TEdit
+        Left = 96
+        Height = 26
+        Top = 153
+        Width = 80
+        TabOrder = 4
+        Text = 'V1Edit'
+      end
+      object Label3: TLabel
+        Left = 40
+        Height = 17
+        Top = 342
+        Width = 60
+        Caption = 'Shunt VA'
+      end
+      object ShuntVA_Edit: TEdit
+        Left = 111
+        Height = 26
+        Top = 338
+        Width = 80
+        TabOrder = 5
+      end
+      object Label14: TLabel
+        Left = 352
+        Height = 17
+        Top = 264
+        Width = 74
+        Caption = 'normal tap'
+      end
+      object Label13: TLabel
+        Left = 121
+        Height = 17
+        Top = 176
+        Width = 17
+        Caption = 'R1'
+      end
+      object Label12: TLabel
+        Left = 232
+        Height = 17
+        Top = 264
+        Width = 51
+        Caption = 'Min tap'
+      end
+      object Label11: TLabel
+        Left = 114
+        Height = 17
+        Top = 264
+        Width = 25
+        Caption = 'Tap'
+      end
+      object Label10: TLabel
+        Left = 472
+        Height = 17
+        Top = 264
+        Width = 55
+        Caption = 'max tap'
+      end
+      object Label9: TLabel
+        Left = 344
+        Height = 17
+        Top = 224
+        Width = 17
+        Caption = 'X3'
+      end
+      object Label8: TLabel
+        Left = 240
+        Height = 17
+        Top = 224
+        Width = 17
+        Caption = 'X2'
+      end
+      object Label7: TLabel
+        Left = 124
+        Height = 17
+        Top = 224
+        Width = 17
+        Caption = 'X1'
+      end
+      object Label6: TLabel
+        Left = 344
+        Height = 17
+        Top = 176
+        Width = 17
+        Caption = 'R3'
+      end
+      object Label4: TLabel
+        Left = 240
+        Height = 17
+        Top = 176
+        Width = 17
+        Caption = 'R2'
+      end
+      object Label2: TLabel
+        Left = 17
+        Height = 17
+        Top = 64
+        Width = 87
+        Caption = 'Base Voltage'
+      end
+      object Label1: TLabel
+        Left = 17
+        Height = 17
+        Top = 26
+        Width = 67
+        Caption = 'Base MVA'
+      end
+      object CB3_CheckBox: TCheckBox
+        Left = 63
+        Height = 22
+        Top = 432
+        Width = 83
+        Caption = 'Shunt CB'
+        TabOrder = 6
+      end
+      object CB2_CheckBox: TCheckBox
+        Left = 63
+        Height = 22
+        Top = 399
+        Width = 50
+        Caption = 'CB2'
+        TabOrder = 7
+      end
+      object CB1_CheckBox: TCheckBox
+        Left = 63
+        Height = 22
+        Top = 371
+        Width = 50
+        Caption = 'CB1'
+        TabOrder = 8
+      end
+      object SaveButton: TButton
+        Left = 440
+        Height = 40
+        Top = 432
+        Width = 112
+        Caption = 'save'
+        OnClick = SaveButtonClick
+        TabOrder = 9
+      end
+      object MaxTap_Edit: TEdit
+        Left = 464
+        Height = 26
+        Top = 288
+        Width = 80
+        TabOrder = 10
+        Text = 'MaxTap_Edit'
+      end
+      object NormalTap_Edit: TEdit
+        Left = 336
+        Height = 26
+        Top = 288
+        Width = 80
+        TabOrder = 11
+        Text = 'NormalTap_Edit'
+      end
+      object MinTap_Edit: TEdit
+        Left = 216
+        Height = 26
+        Top = 288
+        Width = 80
+        TabOrder = 12
+        Text = 'MinTap_Edit'
+      end
+      object Tap_Edit: TEdit
+        Left = 96
+        Height = 26
+        Top = 288
+        Width = 80
+        TabOrder = 13
+        Text = 'Tap_Edit'
+      end
+      object X3_Edit: TEdit
+        Left = 328
+        Height = 26
+        Top = 240
+        Width = 80
+        TabOrder = 14
+        Text = 'X3_Edit'
+      end
+      object R3_Edit: TEdit
+        Left = 328
+        Height = 26
+        Top = 192
+        Width = 80
+        TabOrder = 15
+        Text = 'R3_Edit'
+      end
+      object X2_Edit: TEdit
+        Left = 208
+        Height = 26
+        Top = 240
+        Width = 80
+        TabOrder = 16
+        Text = 'X2_Edit'
+      end
+      object R2_Edit: TEdit
+        Left = 208
+        Height = 26
+        Top = 192
+        Width = 80
+        TabOrder = 17
+        Text = 'R2_Edit'
+      end
+      object X1_Edit: TEdit
+        Left = 96
+        Height = 26
+        Top = 240
+        Width = 80
+        TabOrder = 18
+        Text = 'X1_Edit'
+      end
+      object R1_Edit: TEdit
+        Left = 96
+        Height = 26
+        Top = 192
+        Width = 80
+        TabOrder = 19
+        Text = 'R1_Edit'
+      end
+      object BaseVolt_Edit: TEdit
+        Left = 96
+        Height = 26
+        Top = 64
+        Width = 80
+        TabOrder = 20
+        Text = 'BaseVolt_Edit'
+      end
+      object BaseMVA_Edit: TEdit
+        Left = 96
+        Height = 26
+        Top = 24
+        Width = 80
+        TabOrder = 21
+        Text = '100e6'
+      end
+    end
+    object SETabSheet: TTabSheet
+      Caption = 'SETabSheet'
+      ClientHeight = 507
+      ClientWidth = 858
+      object MeasureStringGrid: TStringGrid
+        AnchorSideLeft.Control = SETabSheet
+        AnchorSideTop.Control = SETabSheet
+        Left = 0
+        Height = 444
+        Top = 0
+        Width = 664
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+        TabOrder = 0
+        ColWidths = (
+          55
+          183
+          194
+          64
+          136
+        )
+        Cells = (
+          5
+          0
+          0
+          'type'
+          1
+          0
+          'value1'
+          2
+          0
+          'value2'
+          3
+          0
+          'weight'
+          4
+          0
+          'value'
+        )
+      end
+      object SESaveButton: TButton
+        Left = 712
+        Height = 52
+        Top = 116
+        Width = 104
+        Caption = 'save'
+        OnClick = SESaveButtonClick
+        TabOrder = 1
+      end
+    end
+  end
+end
